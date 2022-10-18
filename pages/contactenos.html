@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
+    <link rel="shortcut icon" href="../images/favicon-32x32.png">
+    <script src="https://kit.fontawesome.com/162005d3b0.js" crossorigin="anonymous"></script>
+
+
+    <title>Contactenos</title>
+
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <a href="../index.html">
+                <img src="../images/la+voluttuosa+logo2-220a6b78-400w.webp" alt="logo la voluttuosa" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="contactenos.html">Contactenos</a></li>
+                    <li><a href="acercadenosotros.html">Acerca de Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+<main>
+    <section id="contactenos" class="seccion">
+        <iframe width="520" height="400" id="gmap_canvas" 
+        src="https://maps.google.com/maps?q=buenos%20aires&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+        frameborder="0"></iframe>
+        <div class="container-fluid">
+            <div class="row">
+
+                <form action="https://formspree.io/f/xjvlqykj" method="post">
+                    
+                    <h2 class="h2-contactanos">Contáctanos</h2>
+                
+                    <div class="form-block">
+                        <input type="text" name="nombre" class="form-control" placeholder="Nombre Completo">
+                        <!--la unica funcion del ID es conectarse con el FOR del label, para una cuestion de usabiliad-->
+                    </div> 
+                    
+                    <div class="form-block">
+                        <input type="email" name="email" class="form-control" placeholder="Correo Electronico"> 
+                    </div>
+                    
+                    <!--tipos de input: -text -number -email -date -tel -radio -checkbox-->
+                   
+                    <div class="form-block">
+                        <textarea name="mensaje" placeholder="Comentarios" cols="21" rows="6"></textarea>
+                    </div>
+                    
+                    <div class="label">
+                        <label for="sexo-h">Hombre</label>
+                        <input type="radio" name="sexo" id="sexo-h" value="H">
+                        <!--los INPUT de tipo RADIO siempre deben llevar el mismo valor en sus atributos NAME (sexo en este caso)-->
+                    </div>
+
+                    <div class="label">
+                        <label for="sexo-m">Mujer</label>
+                        <input type="radio" name="sexo" id="sexo-m" value="M">
+                    </div>
+
+                    <div class="label">
+                        <label for="pais">Elegi un Pais:</label>
+                        <select class="menu" name="pais" id="pais">
+                            <option value="ar">Argentina</option>
+                            <option value="ur">Uruguay</option>
+                            <option value="br">Brasil</option>
+                            <option value="ch">Chile</option>
+                            <option value="co">Colombia</option>
+                            <!--El texto es lo que ve el usuario, y el valor del atributo VALUE es lo que yo recibo cuando el formulario se procese-->
+                        </select>
+                    </div>
+
+                    <div class="form-block">
+                        <input type="submit" class="boton-form" value="Enviar">
+                
+                    </div>
+            </div>
+        </div>     
+    </form>
+    
+    </section>
+</main>
+
+    <footer>
+    
+        <div class="container">
+            <div class="row">
+                <div class="columna-25">
+                    <div class="logo-footer">
+                        <a href="../index.html">
+                            <img src="../images/logov.webp" alt="logo la voluttuosa">
+                        </a>
+                    </div>
+                </div>
+                <div class="columna-25">
+                        <h3 class="h3">Temas Relacionados</h3>
+                        <ul>
+                            <li><a href="#">Reservas</a></li>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Trabaja con nosotros</a></li>
+                        </ul>
+                </div>
+                <div class="columna-25">
+                    <h3 class="h3">Datos de Contacto</h3>
+                    <ul>
+                        <li>Email:  Lavoluttuosa@gmail.com</li>
+                        <li>Telefono:  3517271976</li>
+                        <li>Direccion:  Via Tripoli 71</li>
+                    </ul>
+                </div>
+                <div class="columna-25">
+                    <h3 class="h3">Redes Sociales</h3>
+                    <ul class="redes">
+                        <li><a href="http://facebook.com" target="_blank">
+                            <i class="fa-brands fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://twitter.com" target="_blank"> <!--target _blank para que el enlace se abra en una pestaña nueva, solo para enlaces externos-->
+                                <i class="fa-brands fa-twitter-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://instagram.com" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div class="flecha">
+            <a href="#contactenos"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+
+        <div class="barra-footer">
+            &copy; Derechos Reservados - 2022
+        </div>
+        
+    </footer>
+</body>
+</html>
