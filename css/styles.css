@@ -7,7 +7,8 @@ html {
 }
 body 
 {
-    font-family: "Roboto";
+    font-family: 'Alegreya', serif;
+    font-family: 'Roboto', sans-serif;
     margin: auto;
     font-size: 14px;
     background-color: black;
@@ -20,8 +21,12 @@ a {
     color: white;
 }
 h1 {
+    font-family: 'Alegreya', serif;
     font-size: 33px;
     margin-bottom: 25px;
+}
+h2{
+    font-family: 'Alegreya', serif;
 }
 h4 {
     color: white;
@@ -37,9 +42,10 @@ header
     width: 100%; 
 }
 header .logo {
-    width: 230px;
+    width: 215px;
     margin: 0;
 }
+
 .navbar-brand{
     margin-right: 0;
 }
@@ -64,7 +70,6 @@ header .logo {
     color: rgba(154, 144, 108, 1);
     border-color: rgba(154, 144, 108, 1);
 }
-
 
 footer {
     background-color: black;
@@ -102,7 +107,6 @@ ul li {
     padding-bottom: 2px;
     padding-top: 2px;
 }
-
 footer .redes
 {
     display: flex; /*flex para alinearlos*/
@@ -141,26 +145,24 @@ footer .redes img:hover{
     padding-top: 60px;
     padding-bottom: 62px;
 }
-
 .body {
     background-color: rgb(68, 68, 68);
 }
-
 .h2-destacados {
-    font-size: 35px;
+    font-size: 50px;
     text-align: center;
     margin-top: 60px;
     color: rgba(154, 144, 108, 1);
 }
 .h2-gluten-free{
-    font-size: 35px;
+    font-size: 50px;
     text-align: center;
     margin-top: 90px;
     color: rgba(154, 144, 108, 1);
 }
 .h2-contactanos {
+    font: 45px 'Alegreya', serif;
     margin-left: 20px;
-    font-size: 28px;
     color: white;
     padding: 10px 0;
 }
@@ -188,11 +190,14 @@ h4 {
     margin-top: 50px;
 }
 .carousel h5 {
-    font-size: 40px;
+    font: 50px 'Alegreya', serif;
+    padding-bottom: 70px;
 }
 .carousel p{
-    font-size: 20px;
-    margin-bottom: 75px;
+    font-size: 30px;
+    padding-bottom: 35px;
+    color: white;
+    font-family: 'Alegreya', serif;
 }
 
 .img-whatsapp{
@@ -303,7 +308,7 @@ h4 {
     margin-top: 120px;
     margin-bottom: 70px;
     text-align: center;
-    font-size: 35px;
+    font: 50px 'Alegreya', serif;
 }
 #menu .menus {
     margin-left: 30px;
@@ -313,18 +318,16 @@ h4 {
 }
 .menus h5 {
     text-align: start;
-    font-size: 40px;
+    font: 50px 'Alegreya', serif;
     color: rgba(154, 144, 108, 1);
     border-bottom:double rgba(154, 144, 108, 1);
-    font-family: serif;
     margin-bottom: 35px;
 }
 .h4-gluten{
     text-align: start;
-    font-size: 40px;
+    font: 50px 'Alegreya', serif;
     color: rgba(154, 144, 108, 1);
     border-bottom:double rgba(154, 144, 108, 1);
-    font-family: serif;
     margin-bottom: 20px;
     margin-left: 28px;
     margin-right: 28px;
@@ -386,11 +389,11 @@ h4 {
 }
 #galeria h1 {
     text-align: center;
+    font: 75px 'Alegreya', serif;
     border-bottom: 1px dashed rgba(154, 144, 108, 1);
     padding-top: 135px;
     margin-bottom: 10px;
     color:rgba(154, 144, 108, 1);
-    font: 60px Georgia, serif;
 }
 
 
@@ -424,9 +427,9 @@ h4 {
     margin-top: 10px;
 }
 .nosotros h2 {
-    font-size: 45px;
+    font-family: 'Alegreya', serif;
+    font-size: 60px;
     color: rgba(154, 144, 108, 1);
-    font-family: serif;
     padding-bottom: 20px;
     padding-top: 60px;
 }
@@ -565,6 +568,7 @@ h4 {
 @media screen and (max-width: 576px)
 {   header .logo {
         width: 190px;
+        height: 100px;
     }
 
     footer .logo-footer {
@@ -586,7 +590,9 @@ h4 {
     .acerca-de-nosotros .bloque-sala {
         left: 22%;
     }
-
+    .carousel img {
+        height: 92vh;
+    }
     .nosotros img{
         height: 400px;
     }
