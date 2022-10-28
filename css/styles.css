@@ -30,48 +30,36 @@ h4 {
 
 header
 {
-    padding: 15px 0; 
     position: fixed; /*posicion fija para que el menu persiga al scrollear*/
     top: 0; /*para que el menu este siempre pegado a la parte superior de la pantalla*/
     left: 0; /*para que este pegado a la izq.*/
     z-index: 5; /*para que el header se coloque por encima de la seccion inicio, que por defecto tiene valor 1*/
     width: 100%; 
-    background-color: black;
 }
-header .container 
-{
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
+header .logo {
+    width: 210px;
 }
-header nav a
-{
-    color: white; 
-    text-decoration: none; /*quita todas las propiedades, en este caso la underline*/
-    margin: 0 15px; /*15px a los lados para separar los enlaces*/
-    transition: color 0.1s ease;
-    font-size: 15px;
+.navbar-collapse {
+    justify-content: flex-end;
 }
-header nav a:hover
-{
-    color: rgba(154, 144, 108, 1); 
+.navbar-dark.bg-dark{
+    background-color: black !important;
 }
-header .container nav ul {  
-    margin-bottom: 0;
+.nav-item {
+    padding: 0 10px;
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color:rgba(154, 144, 108, 1) ;
+}
+.navbar-dark .navbar-toggler {
+    color: rgba(154, 144, 108, 1);
+    border-color: rgba(154, 144, 108, 1);
 }
 
-header .container nav ul li {
-    display: inline-block;
-}
-header .logo 
-{
-    width: 200px; 
-}
-header .hamb 
-{
-    display: none;
-    position: relative; /*relative para que el icono hamb ocupe un espacio y no desaparezca al abrir el nav.*/
-}
 
 footer {
     background-color: black;
@@ -188,7 +176,7 @@ h4 {
 }
 .carousel img {
     height: 530px;
-    margin-top: 100px;
+    margin-top: 95px;
     animation: welcome 3s;
 }
 .nosotros .carousel img{
@@ -212,17 +200,6 @@ h4 {
     width: 60px;
     z-index: 3;
 }
-
-#navbarNav {
-    padding: 17px 0;
-    display:flex;
-    justify-content: end;
-}
-
-#navbarNav li {
-    padding: 0 15px;
-}
-
 
 /*PROPIEDADES HTML INDEX*/
 #inicio {
@@ -330,6 +307,25 @@ h4 {
     margin-top: 20px;
 }
 .menus h5 {
+    text-align: start;
+    font-size: 40px;
+    color: rgba(154, 144, 108, 1);
+    border-bottom:double rgba(154, 144, 108, 1);
+    font-family: serif;
+    margin-bottom: 35px;
+}
+.h4-gluten{
+    text-align: start;
+    font-size: 40px;
+    color: rgba(154, 144, 108, 1);
+    border-bottom:double rgba(154, 144, 108, 1);
+    font-family: serif;
+    margin-bottom: 20px;
+    margin-left: 28px;
+    margin-right: 28px;
+    padding: 0;
+}
+.menus h4 {
     text-align: start;
     font-size: 40px;
     color: rgba(154, 144, 108, 1);
@@ -475,44 +471,7 @@ h4 {
 }
 
 @media screen and (max-width: 991px) {
-    header .container nav 
-    {
-        position: fixed;
-        width: 100%;
-        height: 100%; /*alto a ocupar cuando se abra el menu*/
-        background-color: black;
-        padding-top: 80px;
-        padding-bottom: 80px;
-        padding: 15px;
-        padding-right: 15px; /*espacios para que no este todo pegado*/
-        top: 0;
-        left: 0;
-        margin-top: 80px;
-        display: flex;
-        flex-direction: column; /*los enlaces de forma vertical*/
-        transition: all 0.6s ease; 
-        transform: translateX(100%); /*traslado el elemento fuera de la parte visible, en base al eje x, su 100% fuera */
-    }
-    header .container nav.open
-    {
-        transform: translateX(0); /*traslado a su posicion natural, que es el cero, antes de darle translate 100% hacia afuera*/
-    }
-    header .container nav a /*propiedades de los enlaces*/
-    {
-        color:  rgba(154, 144, 108, 1);
-        font-size: 30px;
-        margin: 15px 0; 
-    }
-    header .container .hamb
-    {
-        display: block;
-        font-size: 40px; /*tamaño icono hamb*/
-        color: rgba(154, 144, 108, 1);
-    }
-    header .container nav ul li {
-        display: block;
-        margin-bottom: 20px;
-    }
+   
     footer .container{
         padding: 40px 15px;
         margin-bottom: 30px;
