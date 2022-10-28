@@ -73,16 +73,6 @@ header .hamb
     position: relative; /*relative para que el icono hamb ocupe un espacio y no desaparezca al abrir el nav.*/
 }
 
-.nav-link.dropdown-toggle{
-    color: white;
-}
-.nav-link.dropdown-toggle:hover {
-    color: rgba(154, 144, 108, 1);
-}
-.dropdown:hover .dropdown-menu{
-    display: block;
-}
-
 footer {
     background-color: black;
     color: white;
@@ -522,14 +512,6 @@ h4 {
     header .container nav ul li {
         display: block;
         margin-bottom: 20px;
-    }
-    .nav-item.dropdown{
-        display: inline-block;
-    }
-    .nav-link.dropdown-toggle{
-        color: rgba(154, 144, 108, 1);
-        padding: 0;
-        margin: 0;
     }
     footer .container{
         padding: 40px 15px;
