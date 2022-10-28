@@ -145,9 +145,11 @@ footer .redes img:hover{
     padding-top: 60px;
     padding-bottom: 62px;
 }
+
 .body {
     background-color: rgb(68, 68, 68);
 }
+
 .h2-destacados {
     font-size: 50px;
     text-align: center;
@@ -517,8 +519,8 @@ h4 {
         transform: scale(1.2);
     }
     .contactenos .container{
-        margin-top: 120px;
-        margin-bottom: 50px;
+        margin-top: 180px;
+        margin-bottom: 70px;
         width: 60%;
     }
 }
@@ -591,7 +593,7 @@ h4 {
         left: 22%;
     }
     .carousel img {
-        height: 92vh;
+        height: 82vh;
     }
     .nosotros img{
         height: 400px;
