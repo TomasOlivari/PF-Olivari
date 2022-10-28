@@ -5,7 +5,6 @@
 html {
     scroll-behavior: smooth;
 }
-
 body 
 {
     font-family: "Roboto";
@@ -13,26 +12,21 @@ body
     font-size: 14px;
     background-color: black;
 }
-
 p {
     color: black;
 }
-
 a {
     text-decoration: none;
     color: white;
 }
-
 h1 {
     font-size: 33px;
     margin-bottom: 25px;
 }
-
 h4 {
     color: white;
     font-size: 20px;
 }
-
 
 header
 {
@@ -40,23 +34,16 @@ header
     position: fixed; /*posicion fija para que el menu persiga al scrollear*/
     top: 0; /*para que el menu este siempre pegado a la parte superior de la pantalla*/
     left: 0; /*para que este pegado a la izq.*/
-    z-index: 2; /*para que el header se coloque por encima de la seccion inicio, que por defecto tiene valor 1*/
+    z-index: 5; /*para que el header se coloque por encima de la seccion inicio, que por defecto tiene valor 1*/
     width: 100%; 
     background-color: black;
 }
-
 header .container 
 {
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
 }
-
-header .logo 
-{
-    width: 200px; 
-}
-
 header nav a
 {
     color: white; 
@@ -65,47 +52,35 @@ header nav a
     transition: color 0.1s ease;
     font-size: 15px;
 }
-
 header nav a:hover
 {
     color: rgba(154, 144, 108, 1); 
 }
+header .container nav ul {  
+    margin-bottom: 0;
+}
 
+header .container nav ul li {
+    display: inline-block;
+}
+header .logo 
+{
+    width: 200px; 
+}
 header .hamb 
 {
     display: none;
     position: relative; /*relative para que el icono hamb ocupe un espacio y no desaparezca al abrir el nav.*/
 }
 
-
-.navbar-collapse{
-    justify-content: end;
+.nav-link.dropdown-toggle{
+    color: white;
 }
-
-ul li .nav-item {
-    margin-left: 10px;
+.nav-link.dropdown-toggle:hover {
+    color: rgba(154, 144, 108, 1);
 }
-
-.navbar-light .navbar-nav .nav-link {
-    color:  rgba(154, 144, 108, 1);
-    transition: color 0.3s;
-    font-size: 15px;
-    margin-right: 18px; 
-    transition: 0.3s ease ;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-    color: black;
-}
-
-
-.navbar img{
-    width: 180px;
-    margin-left: 30px;
-}
-
-.navbar-toggler{
-    margin-left: 10px;
+.dropdown:hover .dropdown-menu{
+    display: block;
 }
 
 footer {
@@ -113,11 +88,9 @@ footer {
     color: white;
     text-align: center;
 }
-
 footer .container {
     padding: 70px 0;
 }
-
 footer .barra-footer {
     background-color: rgb(148, 146, 146);
     padding: 17px;
@@ -126,27 +99,21 @@ footer .barra-footer {
     width: 100%;
     font-family: sans-serif;
 }
-
 footer .logo-footer {
     height: 100px;
 }
-
 footer .logo-footer img{
     width: 200px;   
 }
-
 footer ul {
     padding-left: 0;
 }
-
 footer ul li {
     font-size: 13px;
 }
-
 footer ul li a:hover {
     color: white;
 }
-
 ul li {
     list-style: none;
     padding-bottom: 2px;
@@ -158,14 +125,20 @@ footer .redes
     display: flex; /*flex para alinearlos*/
     justify-content: center;
 }
-
 footer .redes a
 {
     margin: 0 13px; /*margen a los lados para separar un poco los iconos*/
 }
-
 footer .redes i {
     font-size: 20px;
+}
+footer .redes img {
+    width: 20px;
+    margin-top: 10px;
+    transition: width 0.1s ease;
+}
+footer .redes img:hover{
+    width: 23px;
 }
 
 .boton-destacados{
@@ -176,24 +149,7 @@ footer .redes i {
     border: 1px solid rgba(154, 144, 108, 1);
     border-radius: 4px;
 }
-
 .boton-destacados:hover {
-    background-color: white;
-    color: black;
-}
-
-.boton-form {
-    padding: 10px 15px;
-    background-color: black;
-    color: white;
-    font-size: 20px;
-    margin-top: 15px;
-    font-weight: bolder;
-    border: 1px solid white;
-    border-radius: 4px;
-}
-
-.boton-form:hover {
     background-color: white;
     color: black;
 }
@@ -213,35 +169,58 @@ footer .redes i {
     margin-top: 60px;
     color: rgba(154, 144, 108, 1);
 }
-
+.h2-gluten-free{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 90px;
+    color: rgba(154, 144, 108, 1);
+}
 .h2-contactanos {
     margin-left: 20px;
     font-size: 28px;
     color: white;
     padding: 10px 0;
 }
-
 .h3 {
     font-size: 20px;
     color: rgba(154, 144, 108, 1);
 }
-
 h4 {
     color: black;
 }
 
+.carousel {
+    z-index: 4;
+}
+@keyframes welcome {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
 .carousel img {
     height: 530px;
     margin-top: 100px;
+    animation: welcome 3s;
 }
-
+.nosotros .carousel img{
+    margin-top: 50px;
+}
 .carousel h5 {
     font-size: 40px;
 }
-
 .carousel p{
     font-size: 20px;
     margin-bottom: 75px;
+}
+
+.img-whatsapp{
+    position: relative;
+}
+.img-whatsapp img {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 60px;
+    z-index: 3;
 }
 
 #navbarNav {
@@ -254,12 +233,11 @@ h4 {
     padding: 0 15px;
 }
 
+
 /*PROPIEDADES HTML INDEX*/
 #inicio {
-    position: relative;
     padding-top: 102px;
 }
-
 #inicio img
 {
     width: 100%;
@@ -267,24 +245,12 @@ h4 {
     height: 550px;
     opacity: 0.9;
 }
-
-#inicio .bloque-inicio {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    width: 400px;
-    text-align: center;
-    margin-left: -200px;
-    color: whitesmoke;
-}
-
 #pizzas .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 20px;
 }
-
 #pizzas .container .destacados {
     border: 2px solid rgba(154, 144, 108, 1);
     border-radius: 5px;
@@ -292,26 +258,22 @@ h4 {
     margin-bottom: 10px;
     width: 27%;
 }
-
 #pizzas .destacados .imagen-destacados img {
     width: 100%;
     height: 220px;
     border-radius: 5px;
 }
-
 #pizzas .destacados .contenido-destacados {
     padding-left: 20px;
     padding-bottom: 30px;
     margin-top: 15px;
     color: white;
 }
-
 #pizzas .destacados .contenido-destacados p {
     margin-bottom: 20px;
     color: white;
     font-size: 16px;
 }
-
 #pizzas .destacados .contenido-destacados h3 {
     font-size: 1.6rem;
     padding-bottom: 5px;
@@ -324,7 +286,6 @@ h4 {
     height: 220px;
     perspective: 1000px;
   }
-  
   .flip-card-inner {
     position: relative;
     width: 100%;
@@ -334,11 +295,9 @@ h4 {
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
-  
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
-
 .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
@@ -346,27 +305,24 @@ h4 {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
-  
   .flip-card-front {
     background-color: #bbb;
     color: black;
   }
-  
   .flip-card-back {
     background-color: rgb(129, 129, 129);
     color: white;
     transform: rotateY(180deg);
   }
-
   .flip-card-back p {
     color: white;
   }
+
 
 /*PROPIEDADES HTML MENU*/
 #menu {
     padding-top: 30px;
 }
-
 #menu p{
     width: 100%;
     color: white;
@@ -377,15 +333,12 @@ h4 {
     text-align: center;
     font-size: 35px;
 }
-
 #menu .menus {
     margin-left: 30px;
     margin-bottom: 50px;
     margin-right: 30px;
     margin-top: 20px;
-    
 }
-
 .menus h5 {
     text-align: start;
     font-size: 40px;
@@ -394,14 +347,12 @@ h4 {
     font-family: serif;
     margin-bottom: 35px;
 }
-
 .menus ul {
     display: flex;
     flex-direction: column;
     padding-left: 0;
     margin-top: 0;
 }
-
 .menus ul li {
     color: white;
     border-bottom: dotted 1px rgba(154, 144, 108, 1);
@@ -410,6 +361,7 @@ h4 {
     font-size: 18px;
     font-family: serif; 
 }
+
 
 /*PROPIEDADES HTML GALERIA*/
 #galeria .container{
@@ -420,12 +372,10 @@ h4 {
     margin-top: 90px;
     margin-bottom: 50px;
 }
-
 .galeria-imagen{
     width: 28%;
     margin-bottom: 18px;
 }
-
 #galeria img {
     width: 100%;
     height: 220px;
@@ -436,7 +386,6 @@ h4 {
     padding: 2px;
     transition: transform 0.2s;
 }
-
 #galeria img:hover {
     filter: grayscale(0);
     transform: scale(1.5);
@@ -444,7 +393,6 @@ h4 {
     z-index: 2;
     border: 1px solid black;
 }
-
 #galeria h1 {
     text-align: center;
     border-bottom: 1px dashed rgba(154, 144, 108, 1);
@@ -454,6 +402,7 @@ h4 {
     font: 60px Georgia, serif;
 }
 
+
 /*PROPIEDADES HTML CONTACTENOS*/
 .contactenos .container{
     margin-top: 140px;
@@ -461,20 +410,19 @@ h4 {
     width: 40%;
     padding: 30px;
     border: 2px solid rgba(154, 144, 108, 1);
+    border-radius: 8px;
     color: white;
-
 }
+
 
 /*PROPIEDADES HTML ACERCA DE NOSOTROS*/
 #acercadenosotros {
-    margin-bottom: 160px;
+    margin-bottom: 120px;
     padding: 95px 30px 10px 30px;
 }
-
 .nosotros img{
     height: 500px;
 }
-
 .nosotros p {
     text-align: justify;
     width: 90%;
@@ -484,32 +432,26 @@ h4 {
     color: white;
     margin-top: 10px;
 }
-
 .nosotros h2 {
     font-size: 45px;
     color: rgba(154, 144, 108, 1);
     font-family: serif;
     padding-bottom: 20px;
-    padding-top: 120px;
+    padding-top: 60px;
 }
-
 .galeria-nosotros {
     margin-top: 50px;
     margin-bottom: 60px;
 }
-
 .galeria-nosotros .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    
 }
-
 .img-nosotros {
     margin-top: 10px;
     width: 32%;
 }
-
 .img-nosotros img {
     width: 100%;
     height: 300px;
@@ -519,7 +461,6 @@ h4 {
     padding: 1px;
     transition: transform 0.2s;
 }
-
 .galeria-nosotros img:hover {
     filter: grayscale(0);
     transform: scale(1.3);
@@ -548,7 +489,7 @@ h4 {
     {
         position: fixed;
         width: 100%;
-        height: 78%; /*alto a ocupar cuando se abra el menu*/
+        height: 100%; /*alto a ocupar cuando se abra el menu*/
         background-color: black;
         padding-top: 80px;
         padding-bottom: 80px;
@@ -578,6 +519,18 @@ h4 {
         font-size: 40px; /*tamaño icono hamb*/
         color: rgba(154, 144, 108, 1);
     }
+    header .container nav ul li {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .nav-item.dropdown{
+        display: inline-block;
+    }
+    .nav-link.dropdown-toggle{
+        color: rgba(154, 144, 108, 1);
+        padding: 0;
+        margin: 0;
+    }
     footer .container{
         padding: 40px 15px;
         margin-bottom: 30px;
@@ -604,7 +557,7 @@ h4 {
     }
     .nosotros p {
         width: 100%;
-        margin-bottom: 50px; 
+        margin-bottom: 30px; 
     }
     .img-nosotros {
         width: 43%;
@@ -651,6 +604,12 @@ h4 {
     .contactenos .container{
         width: 80%;
     }
+
+    .img-whatsapp img{
+        width: 30px;
+        right: 10px;
+        bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 576px)
@@ -688,4 +647,8 @@ h4 {
     .contactenos .container{
         width: 90%;
 }
+    .img-whatsapp img{
+        right: 5px;
+        bottom: 5px;
+    }
 }

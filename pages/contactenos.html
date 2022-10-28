@@ -24,11 +24,21 @@
                     <img src="../assets/images/la+voluttuosa+logo2-220a6b78-400w.webp" class="logo" alt="logo pizzeria">
                 </a>
                 <nav>
-                    <a href="../index.html">Inicio</a>
-                    <a href="./menu.html">Menu</a>
-                    <a href="./galeria.html">Galeria</a>
-                    <a href="./contactenos.html">Contactenos</a>
-                    <a href="./acercadenosotros.html">Acerca de Nosotros</a>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Menus
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="./menu.html">Clasico</a></li>
+                              <li><a class="dropdown-item" href="./menusingluten.html">Gluten Free</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./galeria.html">Galeria</a></li>
+                        <li><a href="./contactenos.html">Contactenos</a></li>
+                        <li><a href="./acercadenosotros.html">Acerca de Nosotros</a></li>
+                    </ul>
                 </nav>
                 <a href="#" class="hamb"><i class="fas fa-bars"></i></a>
         </div>
@@ -82,6 +92,12 @@
 
 </main>
 
+    <div class="img-whatsapp">
+        <a href="https://www.whatsapp.com/"  target="_blank">
+            <img src="../assets/images/icono-wsp.png" alt="icono enlace a whatsapp">
+        </a>
+    </div>
+
 <footer>
     <div class="container">
         <div class="row">
@@ -113,17 +129,17 @@
                 <h3 class="h3">Redes Sociales</h3>
                 <ul class="redes">
                     <li><a href="http://facebook.com" target="_blank">
-                        <i class="fa-brands fa-facebook-square"></i>
+                            <img src="../assets/images/icono-fb.png" alt="icono enlace a facebook">
                         </a>
                     </li>
                     <li>
                         <a href="http://twitter.com" target="_blank"> <!--target _blank para que el enlace se abra en una pestaña nueva, solo para enlaces externos-->
-                        <i class="fa-brands fa-twitter-square"></i>
+                           <img src="../assets/images/icono-tw.png" alt="icono enlace a twitter">
                         </a>
                     </li>
                     <li>
                         <a href="http://instagram.com" target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
+                            <img src="../assets/images/icono-ig.png" alt="icono enlace a instagram">
                         </a>
                     </li>
                 </ul>
@@ -137,6 +153,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
     </script>  
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
     <script src="js/jquery.js"></script>
      <script src="js/funciones.js"></script> 
 

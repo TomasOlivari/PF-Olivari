@@ -13,6 +13,7 @@
     <script src="https://kit.fontawesome.com/162005d3b0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/styles.css">
 
 
@@ -28,11 +29,21 @@
                 <img src="./assets/images/la+voluttuosa+logo2-220a6b78-400w.webp" class="logo" alt="logo pizzeria">
             </a>
         <nav>
-            <a href="./index.html">Inicio</a>
-            <a href="./pages/menu.html">Menu</a>
-            <a href="./pages/galeria.html">Galeria</a>
-            <a href="./pages/contactenos.html">Contactenos</a>
-            <a href="./pages/acercadenosotros.html">Acerca de Nosotros</a>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Menus
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="./pages/menu.html">Clasico</a></li>
+                      <li><a class="dropdown-item" href="./pages/menusingluten.html">Gluten Free</a></li>
+                    </ul>
+                </li>
+                <li><a href="./pages/galeria.html">Galeria</a></li>
+                <li><a href="./pages/contactenos.html">Contactenos</a></li>
+                <li><a href="./pages/acercadenosotros.html">Acerca de Nosotros</a></li>
+            </ul>
         </nav>
             <a href="#" class="hamb"><i class="fas fa-bars"></i></a>
     </div>
@@ -80,11 +91,10 @@
             </button>
         </div>
     </section> 
-
-
+    
         <section id="pizzas" class="seccion">
             <h2 class="h2-destacados">"ELIGE TU PIZZA"</h2>
-                <div class="container">
+                <div class="container wow bounceInUp" style="visibility:visible; animation-name: fadeInUp;">
                             <div class="destacados">
                                     <div class="flip-card">
                                     <div class="flip-card-inner">
@@ -160,7 +170,7 @@
                                     </div>
                                 </div>
                                 <div class="contenido-destacados">
-                                    <h3>Voluttuosa Speciale</h3>
+                                    <h3>Voluttuosa</h3>
                                     <p>ESPECIALIDAD</p>
                                     <a href="./pages/menu.html" class="boton-destacados">Ir al menu</a>
                                 </div>
@@ -180,11 +190,35 @@
                                     </div>
                                 </div>
                                 <div class="contenido-destacados">
-                                    <h3>Salsiccia e peperoni</h3>
+                                    <h3>Salsiccia</h3>
                                     <p>CLASICAS</p>
                                     <a href="./pages/menu.html" class="boton-destacados">Ir al menu</a>
                                 </div>
                             </div>
+                            <div class="destacados">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="imagen-destacados flip-card-front">
+                                            <img src="./assets/images/Frutti di mare.jpg" alt="pizza frutos del mar">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <h2>Ingredientes:</h2> 
+                                            <p>Mozzarella</p> 
+                                            <p>Camarones</p>
+                                            <p>Mejillones</p> 
+                                            <p>Calamares</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contenido-destacados">
+                                    <h3>Frutti di mare</h3>
+                                    <p>ESPECIALIDAD</p>
+                                    <a href="./pages/menu.html" class="boton-destacados">Ir al menu</a>
+                                </div>
+                            </div>
+                    </div>
+                        <h2 class="h2-gluten-free">"GLUTEN FREE"</h2>
+                    <div class="container wow bounceInUp" style="visibility:visible; animation-name: fadeInUp;">
                             <div class="destacados">
                                 <div class="flip-card">
                                     <div class="flip-card-inner">
@@ -225,27 +259,7 @@
                                     <a href="./pages/menu.html" class="boton-destacados">Ir al menu</a>
                                 </div>
                             </div>
-                            <div class="destacados">
-                                <div class="flip-card">
-                                    <div class="flip-card-inner">
-                                        <div class="imagen-destacados flip-card-front">
-                                            <img src="./assets/images/Frutti di mare.jpg" alt="pizza frutos del mar">
-                                        </div>
-                                        <div class="flip-card-back">
-                                            <h2>Ingredientes:</h2> 
-                                            <p>Mozzarella</p> 
-                                            <p>Camarones</p>
-                                            <p>Mejillones</p> 
-                                            <p>Calamares</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="contenido-destacados">
-                                    <h3>Frutti di mare</h3>
-                                    <p>ESPECIALIDAD</p>
-                                    <a href="./pages/menu.html" class="boton-destacados">Ir al menu</a>
-                                </div>
-                            </div>
+                        
                             <div class="destacados">
                                 <div class="flip-card">
                                     <div class="flip-card-inner">
@@ -262,7 +276,7 @@
                                 </div>
                                 <div class="contenido-destacados">
                                     <h3>Ortolana</h3>
-                                    <p>VEGETARIANAS</p>
+                                    <p>SIN GLUTEN</p>
                                     <a href="./pages/menu.html" class="boton-destacados">Ir al menu</a>
                                 </div>
                             </div>
@@ -270,6 +284,12 @@
     </section>
 
 </main>
+
+<div class="img-whatsapp">
+    <a href="https://www.whatsapp.com/" target="_blank">
+        <img src="./assets/images/icono-wsp.png" alt="icono enlace a whatsapp">
+    </a>
+</div>
 
 <footer>
     <div class="container">
@@ -302,23 +322,24 @@
                 <h3 class="h3">Redes Sociales</h3>
                 <ul class="redes">
                     <li><a href="http://facebook.com" target="_blank">
-                        <i class="fa-brands fa-facebook-square"></i>
+                            <img src="./assets/images/icono-fb.png" alt="icono enlace a facebook">
                         </a>
                     </li>
                     <li>
                         <a href="http://twitter.com" target="_blank"> <!--target _blank para que el enlace se abra en una pestaña nueva, solo para enlaces externos-->
-                        <i class="fa-brands fa-twitter-square"></i>
+                            <img src="./assets/images/icono-tw.png" alt="icono enlace a twitter">
                         </a>
                     </li>
                     <li>
                         <a href="http://instagram.com" target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
+                            <img src="./assets/images/icono-ig.png" alt="icono enlace a instagram">
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
+
     <div class="barra-footer">
         &copy; 2022 - La Voluttuosa
     </div>
@@ -326,6 +347,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
     </script>  
+        <script src="js/wow.min.js"></script>
+        <script>
+        new WOW().init();
+        </script>
      <script src="js/jquery.js"></script>
      <script src="js/funciones.js"></script> 
 </body>

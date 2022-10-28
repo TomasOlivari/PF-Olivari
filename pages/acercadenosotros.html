@@ -23,13 +23,23 @@
                     <img src="../assets/images/la+voluttuosa+logo2-220a6b78-400w.webp" class="logo pizzeria">
                 </a>
             <nav>
-                <a href="../index.html">Inicio</a>
-                <a href="./menu.html">Menu</a>
-                <a href="./galeria.html">Galeria</a>
-                <a href="./contactenos.html">Contactenos</a>
-                <a href="./acercadenosotros.html">Acerca de Nosotros</a>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Menus
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="./menu.html">Clasico</a></li>
+                          <li><a class="dropdown-item" href="./menusingluten.html">Gluten Free</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./galeria.html">Galeria</a></li>
+                    <li><a href="./contactenos.html">Contactenos</a></li>
+                    <li><a href="./acercadenosotros.html">Acerca de Nosotros</a></li>
+                </ul>
             </nav>
-            <a href="#" class="hamb"><i class="fas fa-bars"></i></a>
+                <a href="#" class="hamb"><i class="fas fa-bars"></i></a>
         </div>
     </header>
 
@@ -77,7 +87,7 @@
 
     <section id="acercadenosotros">
         <div class="nosotros">
-            <div class="container-fluid">
+            <div class="container-fluid wow fadeInup" style="visibility:visible; animation-name: fadeInUp;">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                         <div>
@@ -94,7 +104,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div id="carouselExampleIndicators" class="carousel slide carousel-nosotros" data-bs-ride="carousel">
                             <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -127,7 +137,7 @@
     </section>
 
     <section class="galeria-nosotros">
-        <div class="container">     
+        <div class="container wow fadeInup" style="visibility:visible; animation-name: fadeInUp;">     
             <div class="img-nosotros"> 
                 <img src="../assets/images/entrada-pizzeria.webp" alt="entrada restaurante">
             </div>
@@ -155,6 +165,12 @@
     </section>
 
 </main>
+
+    <div class="img-whatsapp">
+        <a href="https://www.whatsapp.com/"  target="_blank">
+            <img src="../assets/images/icono-wsp.png" alt="icono enlace a whatsapp">
+        </a>
+    </div>
 
 <footer>
     <div class="container">
@@ -187,17 +203,17 @@
                 <h3 class="h3">Redes Sociales</h3>
                 <ul class="redes">
                     <li><a href="http://facebook.com" target="_blank">
-                        <i class="fa-brands fa-facebook-square"></i>
+                            <img src="../assets/images/icono-fb.png" alt="icono enlace a facebook">
                         </a>
                     </li>
                     <li>
                         <a href="http://twitter.com" target="_blank"> <!--target _blank para que el enlace se abra en una pestaña nueva, solo para enlaces externos-->
-                        <i class="fa-brands fa-twitter-square"></i>
+                            <img src="../assets/images/icono-tw.png" alt="icono enlace a twitter">
                         </a>
                     </li>
                     <li>
                         <a href="http://instagram.com" target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
+                            <img src="../assets/images/icono-ig.png" alt="icono enlace a instagram">
                         </a>
                     </li>
                 </ul>
