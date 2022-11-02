@@ -1,0 +1,28 @@
+.navbar-brand {
+	margin-right: 0;
+}
+.navbar-collapse {
+	justify-content: flex-end;
+}
+.navbar-dark.bg-dark {
+	background-color: $background-color_1 !important;
+}
+.nav-item {
+	padding: 0 10px;
+	color: $color_2;
+	font-size: 15px;
+}
+.navbar-dark {
+	.navbar-nav {
+		.nav-link {
+			color: $color_2;
+			&:hover {
+				color: $color_3;
+			}
+		}
+	}
+	.navbar-toggler {
+		color: $color_3;
+		border-color: $border-color_1;
+	}
+}
