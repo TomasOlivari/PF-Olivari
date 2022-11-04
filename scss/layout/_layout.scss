@@ -1,0 +1,196 @@
+
+.nosotros {
+	.carousel {
+		img {
+			margin-top: 50px;
+		}
+	}
+	img {
+		height: 500px;
+	}
+	p {
+		text-align: justify;
+		width: 90%;
+		font-family: $font-family_4;
+		font-size: 18px;
+		line-height: 2.0;
+		color: $color_2;
+		margin-top: 10px;
+	}
+	h2 {
+		font-family: $font-family_1;
+		font-size: 60px;
+		color: $color_3;
+		padding-bottom: 20px;
+		padding-top: 60px;
+	}
+}
+
+#pizzas {
+		padding-bottom: 60px; //padding para dar un respiro entre secciones
+		padding-top: 60px;
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		gap: 20px;
+		.destacados {
+			border: 2px solid rgba(154, 144, 108, 1);
+			border-radius: 5px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			width: 27%; //ancho del container a ocupar por cada card
+		}
+	}
+	.destacados {
+		.imagen-destacados {
+			img {
+				width: 100%;
+				height: 220px;
+				border-radius: 5px;
+			}
+		}
+		.contenido-destacados {
+			padding-left: 20px;
+			padding-bottom: 30px;
+			margin-top: 15px;
+			color: $color_2;
+			p {
+				margin-bottom: 20px;
+				color: $color_2;
+				font-size: 16px;
+			}
+			h3 {
+				font-size: 1.6rem;
+				padding-bottom: 5px;
+				color: $color_3;
+			}
+		}
+	}
+}
+
+#menu {
+	padding-top: 30px;
+	p {
+		width: 100%;
+		color: $color_2;
+		padding: 24px 20px;
+		background-color: $background-color_8;
+		margin-top: 120px;
+		margin-bottom: 70px;
+		text-align: center;
+		font: 50px 'Alegreya', serif;
+	}
+	.menus {
+		margin-left: 30px;
+		margin-bottom: 50px;
+		margin-right: 30px;
+		margin-top: 20px;
+	}
+}
+.menus {
+	h5 {
+		text-align: start;
+		font: 50px 'Alegreya', serif;
+		color: $color_3;
+		border-bottom: double rgba(154, 144, 108, 1);
+		margin-bottom: 35px;
+	}
+	h4 {
+		text-align: start;
+		font-size: 40px;
+		color: $color_3;
+		border-bottom: double rgba(154, 144, 108, 1);
+		font-family: $font-family_4;
+		margin-bottom: 35px;
+	}
+	ul {
+		display: flex;
+		flex-direction: column;
+		padding-left: 0;
+		margin-top: 0;
+		li {
+			color: $color_2;
+			border-bottom: dotted 1px rgba(154, 144, 108, 1);
+			margin-bottom: 8px;
+			padding-bottom: 15px;
+			font-size: 18px;
+			font-family: $font-family_4;
+		}
+	}
+}
+
+#galeria {
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		gap: 8px 13px;
+		margin-top: 90px;
+		margin-bottom: 50px;
+	}
+	img {
+		width: 100%;
+		height: 220px;
+		background: #fff;
+		margin: 8px 0;
+		filter: grayscale(1);
+		border: 1px solid #ccc;
+		padding: 2px;
+		transition: transform 0.2s;
+		&:hover {
+			filter: grayscale(0);
+			transform: scale(1.5);
+			position: relative;
+			z-index: 2; //z-index para al agrandar con scale, se superponga a las otras imagenes y no quede por debajo
+			border: 1px solid black;
+		}
+	}
+	h1 {
+		text-align: center;
+		font: 75px 'Alegreya', serif;
+		border-bottom: 1px dashed rgba(154, 144, 108, 1);
+		padding-top: 135px;
+		margin-bottom: 10px;
+		color: $color_3;
+	}
+}
+.galeria-imagen {
+	width: 28%;
+	margin-bottom: 18px;
+}
+.contactenos {
+	.container {
+		margin-top: 140px;
+		margin-bottom: 50px;
+		width: 40%;
+		padding: 30px;
+		border: 2px solid rgba(154, 144, 108, 1);
+		border-radius: 8px;
+		color: $color_2;
+	}
+}
+#acercadenosotros {
+	margin-bottom: 120px;
+	padding: 95px 30px 10px 30px;
+}
+.galeria-nosotros {
+	margin-top: 50px;
+	margin-bottom: 60px;
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+	img {
+		&:hover {
+			filter: grayscale(0);
+			transform: scale(1.3);
+			position: relative;
+			padding: 0;
+			z-index: 2;
+			border: 1px solid black;
+		}
+	}
+}
+

@@ -1,0 +1,27 @@
+.carousel {
+	z-index: 4;
+	img {
+		height: 530px;
+		margin-top: 95px; //margin top por la posicion fija del header
+		animation: welcome 3s;
+	}
+	h5 {
+		font: 50px 'Alegreya', serif;
+		padding-bottom: 70px;
+	}
+	p {
+		font-size: 30px;
+		padding-bottom: 35px;
+		color: $color_2;
+		font-family: $font-family_1;
+	}
+}
+
+@keyframes welcome {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
