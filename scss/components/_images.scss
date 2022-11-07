@@ -1,6 +1,7 @@
 .img-nosotros {
 	margin-top: 10px;
 	width: 32%;
+
 	img {
 		width: 100%;
 		height: 300px;
@@ -11,8 +12,10 @@
 		transition: transform 0.2s;
 	}
 }
+
 .img-whatsapp {
 	position: relative;
+
 	img {
 		position: fixed; //para que se este siempre visible
 		right: 20px;

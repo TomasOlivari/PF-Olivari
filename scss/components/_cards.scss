@@ -3,12 +3,14 @@
 	width: auto;
 	height: 220px;
 	perspective: 1000px;
+
 	&:hover {
 		.flip-card-inner {
 			transform: rotateY(180deg);
 		}
 	}
 }
+
 .flip-card-inner {
 	position: relative;
 	width: 100%;
@@ -16,8 +18,9 @@
 	text-align: center;
 	transition: transform 0.6s;
 	transform-style: preserve-3d;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
 .flip-card-front {
 	position: absolute;
 	width: 100%;
@@ -27,6 +30,7 @@
 	background-color: $background-color_6;
 	color: $color_1;
 }
+
 .flip-card-back {
 	position: absolute;
 	width: 100%;
@@ -36,6 +40,7 @@
 	background-color: $background-color_7;
 	color: $color_2;
 	transform: rotateY(180deg);
+
 	p {
 		color: $color_2;
 	}

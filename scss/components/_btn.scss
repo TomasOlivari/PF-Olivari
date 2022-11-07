@@ -1,10 +1,12 @@
 .boton-destacados {
 	background-color: $background-color_1;
 	color: $color_2;
-	padding: 13px 13px;
+	padding: 13px 12px;
 	font-weight: bold;
+	font-size: map-get($font-sizes, "medium");
 	border: 1px solid rgba(154, 144, 108, 1);
 	border-radius: 4px;
+
 	&:hover {
 		background-color: $background-color_3;
 		color: $color_1;
