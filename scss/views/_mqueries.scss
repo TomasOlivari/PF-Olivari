@@ -6,36 +6,43 @@
 			}
 		}
 	}
+
 	.nosotros {
 		p {
 			line-height: 1.7;
 		}
-		
+
 		img {
 			height: 560px;
 		}
-		
+
 	}
+
 	.img-nosotros {
 		width: 42%;
 		margin-bottom: 20px;
 	}
 }
+
 @media screen and (max-width: 991px) {
 	footer {
 		.container {
 			padding: 40px 15px;
 			margin-bottom: 30px;
 		}
+
 		text-align: center;
+
 		.redes {
 			justify-content: center;
 		}
+
 		.logo-footer {
 			width: 100%;
 			padding-bottom: 10px;
 		}
 	}
+
 	#pizzas {
 		.container {
 			.destacados {
@@ -43,10 +50,12 @@
 			}
 		}
 	}
+
 	.galeria-imagen {
 		width: 32%;
 		margin-bottom: 0;
 	}
+
 	#galeria {
 		img {
 			&:hover {
@@ -54,16 +63,19 @@
 			}
 		}
 	}
+
 	.nosotros {
 		p {
 			width: 100%;
 			margin-bottom: 30px;
 		}
 	}
+
 	.img-nosotros {
 		width: 43%;
 		margin-bottom: 20px;
 	}
+
 	.galeria-nosotros {
 		img {
 			&:hover {
@@ -71,6 +83,7 @@
 			}
 		}
 	}
+
 	.contactenos {
 		.container {
 			margin-top: 180px;
@@ -79,6 +92,7 @@
 		}
 	}
 }
+
 @media screen and (max-width: 767px) {
 	header {
 		.logo {
@@ -86,16 +100,20 @@
 			margin: 0;
 		}
 	}
+
 	footer {
 		text-align: center;
+
 		.redes {
 			justify-content: center;
 		}
+
 		.logo-footer {
 			width: 100%;
 			padding-bottom: 10px;
 		}
 	}
+
 	#pizzas {
 		.container {
 			.destacados {
@@ -103,9 +121,11 @@
 			}
 		}
 	}
+
 	.galeria-imagen {
 		width: 45%;
 	}
+
 	#galeria {
 		img {
 			&:hover {
@@ -113,18 +133,22 @@
 			}
 		}
 	}
+
 	.container {
 		width: 100%;
 	}
+
 	.img-nosotros {
 		width: 90%;
 		margin-bottom: 20px;
 	}
+
 	.contactenos {
 		.container {
 			width: 80%;
 		}
 	}
+
 	.img-whatsapp {
 		img {
 			width: 30px;
@@ -133,6 +157,7 @@
 		}
 	}
 }
+
 @media screen and (max-width: 576px) {
 	header {
 		.logo {
@@ -140,18 +165,22 @@
 			height: 100px;
 		}
 	}
+
 	footer {
 		.logo-footer {
 			width: 100%;
 			padding-bottom: 10px;
 		}
+
 		ul {
 			margin-top: 10px;
 		}
 	}
+
 	.container {
 		width: 100%;
 	}
+
 	#pizzas {
 		.container {
 			.destacados {
@@ -159,28 +188,34 @@
 			}
 		}
 	}
+
 	.galeria-imagen {
 		width: 80%;
 	}
+
 	.acerca-de-nosotros {
 		.bloque-sala {
 			left: 22%;
 		}
 	}
+
 	.carousel {
 		img {
 			height: 82vh; //altura a ocupar del viewport en mobile
 		}
 	}
+
 	.nosotros {
 		img {
 			height: 400px;
 		}
 	}
+
 	.img-nosotros {
 		width: 85%;
 		margin-bottom: 20px;
 	}
+
 	.galeria-nosotros {
 		img {
 			&:hover {
@@ -188,11 +223,13 @@
 			}
 		}
 	}
+
 	.contactenos {
 		.container {
 			width: 90%;
 		}
 	}
+
 	.img-whatsapp {
 		img {
 			right: 5px;
