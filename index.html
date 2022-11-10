@@ -60,8 +60,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/contactenos.html">Contactenos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/acercadenosotros.html">Acerca de Nosotros</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Acerca de Nosotros
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./pages/acercadenosotros.html">Quienes Somos?</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./pages/ubicacion.html">Donde Encontrarnos</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -120,8 +128,10 @@
         <section id="pizzas" class="seccion">
             <h2 class="h2-destacados">"ELIGE TU PIZZA"</h2>
             <div class="container wow bounceInUp" style="visibility:visible; animation-name: fadeInUp;">
+                <!--animacion wowjs-->
                 <div class="destacados">
                     <div class="flip-card">
+                        <!--flip cards con rotacion 180 y contenido de ambos lados-->
                         <div class="flip-card-inner">
                             <div class="imagen-destacados flip-card-front">
                                 <img src="./assets/images/diavola.jpg" alt="pizza diavola">
@@ -311,6 +321,7 @@
     </main>
 
     <div class="img-whatsapp">
+        <!--icono enlace a whatsapp con posicion fixed en todas las paginas-->
         <a href="https://www.whatsapp.com/" target="_blank">
             <img src="./assets/images/icono-wsp.png" alt="icono enlace a whatsapp">
         </a>
@@ -377,12 +388,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
         </script>
-    <script src="js/wow.min.js"></script>
+    <script src="./js/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
-    <script src="js/jquery.js"></script>
-    <script src="js/funciones.js"></script>
 
 </body>
 

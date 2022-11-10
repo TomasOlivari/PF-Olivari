@@ -1,8 +1,24 @@
+@media screen and (min-width:1200px){
+	.grid-container{
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		gap: 40px;
+		padding: 30px;
+	}
+
+	.grid-item{
+		height: 230px;
+	}
+}
+
 @media screen and (max-width: 1200px) {
-	#galeria {
+	.grid-container{
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	}
+	
+	.grid-item {
 		img {
 			&:hover {
-				transform: scale(1.4);
+				transform: scale(1.2);
 			}
 		}
 	}
@@ -51,19 +67,6 @@
 		}
 	}
 
-	.galeria-imagen {
-		width: 32%;
-		margin-bottom: 0;
-	}
-
-	#galeria {
-		img {
-			&:hover {
-				transform: scale(1.3);
-			}
-		}
-	}
-
 	.nosotros {
 		p {
 			width: 100%;
@@ -89,6 +92,12 @@
 			margin-top: 180px;
 			margin-bottom: 70px;
 			width: 60%;
+		}
+	}
+
+	.ubicacion {
+		.container {
+			width: 80%;
 		}
 	}
 }
@@ -122,16 +131,8 @@
 		}
 	}
 
-	.galeria-imagen {
-		width: 45%;
-	}
-
-	#galeria {
-		img {
-			&:hover {
-				transform: scale(1.2);
-			}
-		}
+	.grid-container{
+		grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 	}
 
 	.container {
@@ -154,6 +155,12 @@
 			width: 30px;
 			right: 10px;
 			bottom: 10px;
+		}
+	}
+
+	.ubicacion {
+		.container {
+			width: 90%;
 		}
 	}
 }
@@ -189,10 +196,14 @@
 		}
 	}
 
-	.galeria-imagen {
-		width: 80%;
+	.grid-item {
+		img {
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
 	}
-
+	
 	.acerca-de-nosotros {
 		.bloque-sala {
 			left: 22%;
@@ -234,6 +245,12 @@
 		img {
 			right: 5px;
 			bottom: 5px;
+		}
+	}
+
+	.ubicacion {
+		.container {
+			width: 100%;
 		}
 	}
 }

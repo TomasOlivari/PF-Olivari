@@ -2,32 +2,32 @@
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="galeria imagenes la voluttuosa pizzeria torino">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="la voluttuosa pizzeria torino acerca de nosotros ubicacion maps">
     <meta name="keywords"
-        content="pizzeria, pizza, torino, italia, santa rita, delivery, gluten free, la voluttuosa, galeria, fotos">
+        content="pizzeria, pizza, torino, italia, santa rita, delivery, gluten free, la voluttuosa, ubicacion, maps">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="../assets/images/favicon-32x32.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://kit.fontawesome.com/162005d3b0.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../assets/images/favicon-32x32.png">
     <link rel="stylesheet" href="../scss/main.css">
 
-    <title>La Voluttuosa | Galeria</title>
+    <title>La Voluttuosa | Ubicación</title>
+
 </head>
 
 <body>
 
     <header>
-        <!--NAVBAR BOOTSTRAP-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
@@ -73,58 +73,30 @@
                 </div>
             </div>
         </nav>
+
     </header>
 
     <main>
-
-        <section class="container">
-            <h2 class="h2-galeria">Galeria</h2>
-            <div class="grid-container">
-                <div class="grid-item">
-                    <img src="../assets/images/diavola.jpg" alt="pizza tipo diavola">
-                </div>
-                <div class="grid-item">
-                    <img src="../assets/images/capricciosa.jpg" alt="pizza tipo capricciosa">
-                </div>
-                <div class="grid-item">
-                    <img src="../assets/images/marghe.jpg" alt="pizza tipo margherita">
-                </div>
-                <div class="grid-item">
-                    <img src="../assets/images/ortolana.jpg" alt="pizza tipo ortolana/vegetariana">
-                </div>
-                <div class="grid-item">
-                    <img src="../assets/images/Frutti di mare.jpg" alt="pizza frutos del mar">
-                </div>
-                <div class="grid-item">
-                    <img src="../assets/images/wurstel e papate.jpg" alt="pizza tipo salchicha y papas fritas">
-                </div>
-                <div class="grid-item">
-                    <img src="../assets/images/voluttuosa.jpg" alt="pizza tipo voluttuosa">
-                </div>
-                <div class="grid-item">
-                    <img src="../assets/images/panini e crochette.webp" alt="entrada panini e crochetas">
-                </div>
-                <div class="grid-item">
-                    <img src="../assets/images/chiachere.webp" alt="entrada chiachere">
-                </div>
-                <div class="grid-item">
-                    <img src="../assets/images/tiramisu.jpg" alt="postre tiramisu">
-                </div>
-                <div class="grid-item">
-                    <img src="../assets/images/torta alle mele.jpg" alt="postre torta de manzana">
-                </div>
-                <div class="grid-item">
-                    <img src="../assets/images/cheese cake.jpg" alt="postre cheese cake">
+        <!--iframe google maps-->
+        <section class="ubicacion">
+            <h2>!Estamos Aquí!</h2>
+            <div class="container">
+                <div class="row">
+                    <iframe class="col-12"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.028605816885!2d7.643402214933807!3d45.044641369362324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886cd5153daf77%3A0x3859f27deff5b68a!2sVia%20Tripoli%2C%2071%2C%2010136%20Torino%20TO%2C%20Italia!5e0!3m2!1ses-419!2sar!4v1667955487407!5m2!1ses-419!2sar"
+                        width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
             </div>
         </section>
-
     </main>
+
 
     <div class="img-whatsapp">
         <!--icono enlace a whatsapp con posicion fixed en todas las paginas-->
         <a href="https://www.whatsapp.com/" target="_blank">
-            <img src="../assets/images/icono-wsp.png" alt="enlace a whatsapp">
+            <img src="../assets/images/icono-wsp.png" alt="icono enlace a whatsapp">
         </a>
     </div>
 
@@ -161,25 +133,24 @@
                     <h3 class="h3">Redes Sociales</h3>
                     <ul class="redes">
                         <li><a href="http://facebook.com" target="_blank">
-                                <img src="../assets/images/icono-fb.png" alt="enlace a facebook">
+                                <img src="../assets/images/icono-fb.png" alt="icono enlace a facebook">
                             </a>
                         </li>
                         <li>
                             <a href="http://twitter.com" target="_blank">
                                 <!--target _blank para que el enlace se abra en una pestaña nueva, solo para enlaces externos-->
-                                <img src="../assets/images/icono-tw.png" alt="enlace a twitter">
+                                <img src="../assets/images/icono-tw.png" alt="icono enlace a twitter">
                             </a>
                         </li>
                         <li>
                             <a href="http://instagram.com" target="_blank">
-                                <img src="../assets/images/icono-ig.png" alt="enlace a instagram">
+                                <img src="../assets/images/icono-ig.png" alt="icono enlace a instagram">
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-
         <div class="barra-footer">
             &copy; 2022 - La Voluttuosa
         </div>

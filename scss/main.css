@@ -46,7 +46,6 @@ header {
   z-index: 5;
   width: 100%;
 }
-
 header .logo {
   width: 215px;
   margin: 0;
@@ -57,11 +56,9 @@ footer {
   color: white;
   text-align: center;
 }
-
 footer .container {
   padding: 70px 0;
 }
-
 footer .barra-footer {
   background-color: rgb(148, 146, 146);
   padding: 17px;
@@ -70,46 +67,36 @@ footer .barra-footer {
   width: 100%;
   font-family: sans-serif;
 }
-
 footer .logo-footer {
   height: 100px;
 }
-
 footer .logo-footer img {
   width: 200px;
 }
-
 footer ul {
   padding-left: 0;
 }
-
 footer ul li {
   font-size: 13px;
 }
-
 footer ul li a:hover {
   color: white;
 }
-
 footer .redes {
   display: flex;
   justify-content: center;
 }
-
 footer .redes a {
   margin: 0 13px;
 }
-
 footer .redes i {
   font-size: 20px;
 }
-
 footer .redes img {
   width: 20px;
   margin-top: 10px;
   transition: width 0.1s ease;
 }
-
 footer .redes img:hover {
   width: 23px;
 }
@@ -139,11 +126,9 @@ footer .redes img:hover {
 .navbar-dark .navbar-nav .nav-link {
   color: white;
 }
-
 .navbar-dark .navbar-nav .nav-link:hover {
   color: rgb(154, 144, 108);
 }
-
 .navbar-dark .navbar-toggler {
   color: rgb(154, 144, 108);
   border-color: rgb(154, 144, 108);
@@ -153,6 +138,15 @@ footer .redes img:hover {
   font-size: 50px;
   text-align: center;
   margin-top: 60px;
+  color: rgb(154, 144, 108);
+}
+
+.h2-galeria {
+  text-align: center;
+  font: 75px "Alegreya", serif;
+  border-bottom: 1px dashed rgb(154, 144, 108);
+  padding-top: 155px;
+  margin-bottom: 40px;
   color: rgb(154, 144, 108);
 }
 
@@ -190,14 +184,12 @@ footer .redes img:hover {
   padding-bottom: 60px;
   padding-top: 60px;
 }
-
 #pizzas .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 20px;
 }
-
 #pizzas .container .destacados {
   border: 2px solid rgb(154, 144, 108);
   border-radius: 5px;
@@ -205,26 +197,22 @@ footer .redes img:hover {
   margin-bottom: 10px;
   width: 27%;
 }
-
 #pizzas .destacados .imagen-destacados img {
   width: 100%;
   height: 220px;
   border-radius: 5px;
 }
-
 #pizzas .destacados .contenido-destacados {
   padding-left: 20px;
   padding-bottom: 30px;
   margin-top: 15px;
   color: white;
 }
-
 #pizzas .destacados .contenido-destacados p {
   margin-bottom: 20px;
   color: white;
   font-size: 16px;
 }
-
 #pizzas .destacados .contenido-destacados h3 {
   font-size: 1.6rem;
   padding-bottom: 5px;
@@ -234,7 +222,6 @@ footer .redes img:hover {
 #menu {
   padding-top: 30px;
 }
-
 #menu p {
   width: 100%;
   color: white;
@@ -245,7 +232,6 @@ footer .redes img:hover {
   text-align: center;
   font: 50px "Alegreya", serif;
 }
-
 #menu .menus {
   margin-left: 30px;
   margin-bottom: 50px;
@@ -260,7 +246,6 @@ footer .redes img:hover {
   border-bottom: double rgb(154, 144, 108);
   margin-bottom: 35px;
 }
-
 .menus h4 {
   text-align: start;
   font-size: 40px;
@@ -269,14 +254,12 @@ footer .redes img:hover {
   font-family: serif;
   margin-bottom: 35px;
 }
-
 .menus ul {
   display: flex;
   flex-direction: column;
   padding-left: 0;
   margin-top: 0;
 }
-
 .menus ul li {
   color: white;
   border-bottom: dotted 1px rgb(154, 144, 108);
@@ -286,46 +269,33 @@ footer .redes img:hover {
   font-family: serif;
 }
 
-#galeria .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 8px 13px;
-  margin-top: 90px;
-  margin-bottom: 50px;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 20px;
 }
 
-#galeria img {
-  width: 100%;
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 220px;
+}
+.grid-item img {
+  width: 100%;
+  height: 100%;
   background: #fff;
-  margin: 8px 0;
   filter: grayscale(1);
   border: 1px solid #ccc;
   padding: 2px;
   transition: transform 0.2s;
 }
-
-#galeria img:hover {
+.grid-item img:hover {
   filter: grayscale(0);
-  transform: scale(1.5);
+  transform: scale(1.3);
   position: relative;
   z-index: 2;
-  border: 1px solid black;
-}
-
-#galeria h1 {
-  text-align: center;
-  font: 75px "Alegreya", serif;
-  border-bottom: 1px dashed rgb(154, 144, 108);
-  padding-top: 135px;
-  margin-bottom: 10px;
-  color: rgb(154, 144, 108);
-}
-
-.galeria-imagen {
-  width: 28%;
-  margin-bottom: 18px;
 }
 
 .contactenos .container {
@@ -347,11 +317,9 @@ footer .redes img:hover {
 .nosotros .carousel img {
   margin-top: 50px;
 }
-
 .nosotros img {
   height: 500px;
 }
-
 .nosotros p {
   text-align: justify;
   width: 90%;
@@ -361,7 +329,6 @@ footer .redes img:hover {
   color: white;
   margin-top: 10px;
 }
-
 .nosotros h2 {
   font-family: "Alegreya", serif;
   font-size: 60px;
@@ -374,13 +341,11 @@ footer .redes img:hover {
   margin-top: 50px;
   margin-bottom: 60px;
 }
-
 .galeria-nosotros .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
 .galeria-nosotros img:hover {
   filter: grayscale(0);
   transform: scale(1.3);
@@ -390,22 +355,30 @@ footer .redes img:hover {
   border: 1px solid black;
 }
 
+.ubicacion .container {
+  width: 50%;
+}
+.ubicacion h2 {
+  margin-top: 150px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 55px;
+  color: rgb(154, 144, 108);
+}
+
 .carousel {
   z-index: 4;
 }
-
 .carousel img {
   height: 530px;
   margin-top: 95px;
   -webkit-animation: welcome 3s;
-  animation: welcome 3s;
+          animation: welcome 3s;
 }
-
 .carousel h5 {
   font: 50px "Alegreya", serif;
   padding-bottom: 70px;
 }
-
 .carousel p {
   font-size: 30px;
   padding-bottom: 35px;
@@ -417,7 +390,6 @@ footer .redes img:hover {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
@@ -427,19 +399,16 @@ footer .redes img:hover {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
 }
-
 .flip-card {
   background-color: transparent;
   width: auto;
   height: 220px;
   perspective: 1000px;
 }
-
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
@@ -474,7 +443,6 @@ footer .redes img:hover {
   color: white;
   transform: rotateY(180deg);
 }
-
 .flip-card-back p {
   color: white;
 }
@@ -489,7 +457,6 @@ ul li {
   margin-top: 10px;
   width: 32%;
 }
-
 .img-nosotros img {
   width: 100%;
   height: 300px;
@@ -503,7 +470,6 @@ ul li {
 .img-whatsapp {
   position: relative;
 }
-
 .img-whatsapp img {
   position: fixed;
   right: 20px;
@@ -521,191 +487,162 @@ ul li {
   border: 1px solid rgb(154, 144, 108);
   border-radius: 4px;
 }
-
 .boton-destacados:hover {
   background-color: white;
   color: black;
 }
 
-@media screen and (max-width: 1200px) {
-  #galeria img:hover {
-    transform: scale(1.4);
+@media screen and (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+    padding: 30px;
   }
-
+  .grid-item {
+    height: 230px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  .grid-item img:hover {
+    transform: scale(1.2);
+  }
   .nosotros p {
     line-height: 1.7;
   }
-
   .nosotros img {
     height: 560px;
   }
-
   .img-nosotros {
     width: 42%;
     margin-bottom: 20px;
   }
 }
-
 @media screen and (max-width: 991px) {
   footer {
     text-align: center;
   }
-
   footer .container {
     padding: 40px 15px;
     margin-bottom: 30px;
   }
-
   footer .redes {
     justify-content: center;
   }
-
   footer .logo-footer {
     width: 100%;
     padding-bottom: 10px;
   }
-
   #pizzas .container .destacados {
     width: 45%;
   }
-
-  .galeria-imagen {
-    width: 32%;
-    margin-bottom: 0;
-  }
-
-  #galeria img:hover {
-    transform: scale(1.3);
-  }
-
   .nosotros p {
     width: 100%;
     margin-bottom: 30px;
   }
-
   .img-nosotros {
     width: 43%;
     margin-bottom: 20px;
   }
-
   .galeria-nosotros img:hover {
     transform: scale(1.2);
   }
-
   .contactenos .container {
     margin-top: 180px;
     margin-bottom: 70px;
     width: 60%;
   }
+  .ubicacion .container {
+    width: 80%;
+  }
 }
-
 @media screen and (max-width: 767px) {
   header .logo {
     width: 210px;
     margin: 0;
   }
-
   footer {
     text-align: center;
   }
-
   footer .redes {
     justify-content: center;
   }
-
   footer .logo-footer {
     width: 100%;
     padding-bottom: 10px;
   }
-
   #pizzas .container .destacados {
     width: 40%;
   }
-
-  .galeria-imagen {
-    width: 45%;
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   }
-
-  #galeria img:hover {
-    transform: scale(1.2);
-  }
-
   .container {
     width: 100%;
   }
-
   .img-nosotros {
     width: 90%;
     margin-bottom: 20px;
   }
-
   .contactenos .container {
     width: 80%;
   }
-
   .img-whatsapp img {
     width: 30px;
     right: 10px;
     bottom: 10px;
   }
+  .ubicacion .container {
+    width: 90%;
+  }
 }
-
 @media screen and (max-width: 576px) {
   header .logo {
     width: 190px;
     height: 100px;
   }
-
   footer .logo-footer {
     width: 100%;
     padding-bottom: 10px;
   }
-
   footer ul {
     margin-top: 10px;
   }
-
   .container {
     width: 100%;
   }
-
   #pizzas .container .destacados {
     width: 70%;
   }
-
-  .galeria-imagen {
-    width: 80%;
+  .grid-item img:hover {
+    transform: scale(1.1);
   }
-
   .acerca-de-nosotros .bloque-sala {
     left: 22%;
   }
-
   .carousel img {
     height: 82vh;
   }
-
   .nosotros img {
     height: 400px;
   }
-
   .img-nosotros {
     width: 85%;
     margin-bottom: 20px;
   }
-
   .galeria-nosotros img:hover {
     transform: scale(1.1);
   }
-
   .contactenos .container {
     width: 90%;
   }
-
   .img-whatsapp img {
     right: 5px;
     bottom: 5px;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+  .ubicacion .container {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */

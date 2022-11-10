@@ -59,8 +59,15 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./contactenos.html">Contactenos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./acercadenosotros.html">Acerca de Nosotros</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Acerca de Nosotros
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./acercadenosotros.html">Quienes Somos?</a></li>
+                                <li><a class="dropdown-item" href="./ubicacion.html">Donde Encontrarnos</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -119,10 +126,11 @@
 
         <section id="acercadenosotros">
             <div class="nosotros">
-                <div class="container-fluid wow fadeInup" style="visibility:visible; animation-name: fadeInUp;">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                            <div>
+                            <div class="wow fadeInLeft" style="visibility:visible; animation-name: fadeInLeft;">
+                                <!--animacion wowjs-->
                                 <h2>La pizza en tu mesa</h2>
                                 <p>Inicialmente la nuestra era una pizzería para llevar, pero más tarde, gracias también
                                     al
@@ -143,8 +151,9 @@
                         </div>
                         <!--CAROUSEL BOOTSTRAP-->
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                            <div id="carouselExampleIndicators" class="carousel slide carousel-nosotros"
-                                data-bs-ride="carousel">
+                            <div id="carouselExampleIndicators" class="carousel slide carousel-nosotros wow fadeInRight"
+                                style="visibility:visible; animation-name: fadeInRight;" data-bs-ride="carousel">
+                                <!--animacion wowjs-->
                                 <div class="carousel-indicators">
                                     <button type="button" data-bs-target="#carouselExampleIndicators"
                                         data-bs-slide-to="0" class="active" aria-current="true"
@@ -187,6 +196,7 @@
 
         <section class="galeria-nosotros">
             <div class="container wow fadeInup" style="visibility:visible; animation-name: fadeInUp;">
+                <!--animacion wowjs-->
                 <div class="img-nosotros">
                     <img src="../assets/images/entrada-pizzeria.webp" alt="entrada restaurante">
                 </div>
@@ -216,6 +226,7 @@
     </main>
 
     <div class="img-whatsapp">
+        <!--icono enlace a whatsapp con posicion fixed en todas las paginas-->
         <a href="https://www.whatsapp.com/" target="_blank">
             <img src="../assets/images/icono-wsp.png" alt="enlace a whatsapp">
         </a>
@@ -282,12 +293,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
         </script>
-    <script src="./js/wow.min.js"></script>
+    <script src="../js/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
-    <script src="js/jquery.js"></script>
-    <script src="js/funciones.js"></script>
 
 </body>
 
