@@ -360,10 +360,15 @@ footer .redes img:hover {
 }
 .ubicacion h2 {
   margin-top: 150px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
-  font-size: 55px;
+  font-size: 60px;
   color: rgb(154, 144, 108);
+}
+.ubicacion iframe {
+  padding: 0;
+  border: 3px solid rgb(154, 144, 108);
+  margin-bottom: 50px;
 }
 
 .carousel {
