@@ -299,8 +299,8 @@ footer .redes img:hover {
 }
 
 .contactenos .container {
-  margin-top: 140px;
-  margin-bottom: 50px;
+  margin-top: 170px;
+  margin-bottom: 70px;
   width: 40%;
   padding: 30px;
   font-size: 15px;
@@ -359,8 +359,8 @@ footer .redes img:hover {
   width: 50%;
 }
 .ubicacion h2 {
-  margin-top: 150px;
-  margin-bottom: 20px;
+  margin-top: 160px;
+  margin-bottom: 40px;
   text-align: center;
   font-size: 60px;
   color: rgb(154, 144, 108);
@@ -368,7 +368,7 @@ footer .redes img:hover {
 .ubicacion iframe {
   padding: 0;
   border: 3px solid rgb(154, 144, 108);
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .carousel {
