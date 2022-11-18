@@ -1,20 +1,20 @@
-@media screen and (min-width:1200px){
-	.grid-container{
+@media screen and (min-width:1200px) {
+	.grid-container {
 		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 		gap: 40px;
 		padding: 30px;
 	}
 
-	.grid-item{
+	.grid-item {
 		height: 230px;
 	}
 }
 
 @media screen and (max-width: 1200px) {
-	.grid-container{
+	.grid-container {
 		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 	}
-	
+
 	.grid-item {
 		img {
 			&:hover {
@@ -36,6 +36,7 @@
 
 	.img-nosotros {
 		width: 42%;
+		margin-top: 20px;
 		margin-bottom: 20px;
 	}
 }
@@ -77,14 +78,7 @@
 	.img-nosotros {
 		width: 43%;
 		margin-bottom: 20px;
-	}
-
-	.galeria-nosotros {
-		img {
-			&:hover {
-				transform: scale(1.2);
-			}
-		}
+		margin-top: 10px;
 	}
 
 	.contactenos {
@@ -121,6 +115,15 @@
 			width: 100%;
 			padding-bottom: 10px;
 		}
+
+		ul {
+			margin-top: 10px;
+		}
+
+		.h3 {
+			//clase encabezados footer
+			margin-top: 15px;
+		}
 	}
 
 	#pizzas {
@@ -131,7 +134,7 @@
 		}
 	}
 
-	.grid-container{
+	.grid-container {
 		grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 	}
 
@@ -173,22 +176,6 @@
 		}
 	}
 
-	footer {
-		.logo-footer {
-			width: 100%;
-			padding-bottom: 10px;
-		}
-
-		ul {
-			margin-top: 10px;
-		}
-
-		.h3 {
-			//clase encabezados footer
-			margin-top: 15px;
-		}
-	}
-
 	.container {
 		width: 100%;
 	}
@@ -208,12 +195,6 @@
 			}
 		}
 	}
-	
-	.acerca-de-nosotros {
-		.bloque-sala {
-			left: 22%;
-		}
-	}
 
 	.carousel {
 		img {
@@ -229,7 +210,6 @@
 
 	.img-nosotros {
 		width: 85%;
-		margin-bottom: 20px;
 	}
 
 	.galeria-nosotros {
