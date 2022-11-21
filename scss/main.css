@@ -176,10 +176,8 @@ footer .redes img:hover {
 }
 
 .h2-contactanos {
-  font: 45px "Alegreya", serif;
-  margin-left: 20px;
+  font: 35px "Alegreya", serif;
   color: white;
-  padding: 10px 0;
 }
 
 .h3 {
@@ -332,7 +330,7 @@ footer .redes img:hover {
 .contactenos .container {
   margin-top: 170px;
   margin-bottom: 70px;
-  width: 40%;
+  width: 45%;
   padding: 30px;
   font-size: 15px;
   border: 2px solid rgb(154, 144, 108);
@@ -412,8 +410,8 @@ footer .redes img:hover {
 }
 
 .carousel h5 {
-  font: 50px "Alegreya", serif;
-  padding-bottom: 70px;
+  font: 47px "Alegreya", serif;
+  padding-bottom: 50px;
 }
 
 .carousel p {
@@ -665,7 +663,7 @@ ul li {
   }
 
   #pizzas .container .destacados {
-    width: 40%;
+    width: 45%;
   }
 
   .grid-container {
