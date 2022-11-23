@@ -153,14 +153,6 @@
 		}
 	}
 
-	.img-whatsapp {
-		img {
-			width: 30px;
-			right: 10px;
-			bottom: 10px;
-		}
-	}
-
 	.ubicacion {
 		.container {
 			width: 90%;
@@ -230,13 +222,6 @@
 		}
 	}
 
-	.img-whatsapp {
-		img {
-			right: 5px;
-			bottom: 5px;
-		}
-	}
-
 	#acercadenosotros {
 		padding: 5px 30px 10px 30px;
 	}
@@ -245,5 +230,9 @@
 		.container {
 			width: 95%;
 		}
+	}
+
+	.gotopbtn {
+		display: none;
 	}
 }

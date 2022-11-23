@@ -16,15 +16,3 @@
 		}
 	}
 }
-
-.img-whatsapp {
-	position: relative;
-
-	img {
-		position: fixed; //para que se este siempre visible
-		right: 20px;
-		bottom: 20px;
-		width: 60px;
-		z-index: 3;
-	}
-}
