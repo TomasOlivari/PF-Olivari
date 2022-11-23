@@ -641,7 +641,7 @@ ul li {
 @media screen and (max-width: 576px) {
   header .logo {
     width: 190px;
-    height: 70px;
+    height: 100px;
   }
   .container {
     width: 100%;
@@ -653,7 +653,8 @@ ul li {
     transform: scale(1.1);
   }
   .carousel img {
-    height: 70vh;
+    height: 80vh;
+    margin-top: 126px;
   }
   .nosotros img {
     height: 400px;
