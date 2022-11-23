@@ -482,11 +482,12 @@ ul li {
 .boton-destacados {
   background-color: black;
   color: white;
-  padding: 13px 12px;
+  padding: 13px 11px;
   font-weight: bold;
   font-size: 15px;
   border: 1px solid rgb(154, 144, 108);
   border-radius: 4px;
+  transition: all ease-in-out 0.2s;
 }
 .boton-destacados:hover {
   background-color: white;
@@ -501,6 +502,7 @@ ul li {
   font-size: 18px;
   border: 1px solid rgb(154, 144, 108);
   border-radius: 4px;
+  transition: all ease-in-out 0.2s;
 }
 .boton-contactenos:hover {
   background-color: white;
@@ -520,11 +522,10 @@ ul li {
   line-height: 35px;
   color: white;
   font-size: 18px;
+  transition: all ease-in-out 0.1s;
 }
 .gotopbtn:hover {
-  color: black;
-  background-color: white;
-  font-size: 22px;
+  color: white;
 }
 
 @media screen and (min-width: 1200px) {

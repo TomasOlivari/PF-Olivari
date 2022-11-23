@@ -1,11 +1,12 @@
 .boton-destacados {
 	background-color: $background-color_1;
 	color: $color_2;
-	padding: 13px 12px;
+	padding: 13px 11px;
 	font-weight: bold;
 	font-size: map-get($font-sizes, "medium");
 	border: 1px solid rgba(154, 144, 108, 1);
 	border-radius: 4px;
+	transition: all ease-in-out 0.2s;
 
 	&:hover {
 		background-color: $background-color_3;
@@ -21,6 +22,7 @@
 	font-size: map-get($font-sizes, "large");
 	border: 1px solid rgba(154, 144, 108, 1);
 	border-radius: 4px;
+	transition: all ease-in-out 0.2s;
 
 	&:hover {
 		background-color: $background-color_3;
@@ -41,10 +43,9 @@
 	line-height: 35px;
 	color: $color_2;
 	font-size: map-get($font-sizes, "large");
+	transition: all ease-in-out 0.1s;
 
 	&:hover {
-		color: $color_1;
-		background-color: $background-color_3;
-		font-size: 22px;
+		color: $color_2;
 	}
 }
