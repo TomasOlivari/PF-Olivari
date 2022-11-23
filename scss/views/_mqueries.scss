@@ -181,6 +181,10 @@
 	}
 
 	#pizzas {
+		.h2-destacados {
+			margin-top: 15px;
+			margin-bottom: 60px;
+		}	
 		.container {
 			.destacados {
 				width: 70%;
@@ -198,7 +202,7 @@
 
 	.carousel {
 		img {
-			height: 86vh; //altura a ocupar del viewport en mobile
+			height: 60vh; //altura a ocupar del viewport en mobile
 		}
 	}
 
@@ -233,6 +237,10 @@
 		}
 	}
 
+	#acercadenosotros {
+		padding: 5px 30px 10px 30px;
+	}
+	
 	.ubicacion {
 		.container {
 			width: 95%;

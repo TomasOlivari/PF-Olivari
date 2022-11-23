@@ -141,6 +141,7 @@ footer .redes img:hover {
   font-size: 50px;
   text-align: center;
   margin-top: 60px;
+  margin-bottom: 35px;
   color: rgb(154, 144, 108);
 }
 
@@ -157,6 +158,7 @@ footer .redes img:hover {
   font-size: 50px;
   text-align: center;
   margin-top: 90px;
+  margin-bottom: 35px;
   color: rgb(154, 144, 108);
 }
 
@@ -647,6 +649,10 @@ ul li {
   .container {
     width: 100%;
   }
+  #pizzas .h2-destacados {
+    margin-top: 15px;
+    margin-bottom: 60px;
+  }
   #pizzas .container .destacados {
     width: 70%;
   }
@@ -654,7 +660,7 @@ ul li {
     transform: scale(1.1);
   }
   .carousel img {
-    height: 86vh;
+    height: 60vh;
   }
   .nosotros img {
     height: 400px;
@@ -671,6 +677,9 @@ ul li {
   .img-whatsapp img {
     right: 5px;
     bottom: 5px;
+  }
+  #acercadenosotros {
+    padding: 5px 30px 10px 30px;
   }
   .ubicacion .container {
     width: 95%;
