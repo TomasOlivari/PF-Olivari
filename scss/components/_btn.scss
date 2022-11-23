@@ -27,3 +27,24 @@
 		color: $color_1;
 	}
 }
+
+.gotopbtn {
+	position: fixed;
+	width: 35px;
+	height: 35px;
+	background-color: $background-color_1;
+	border: solid 2px $border-color_1;
+	bottom: 30px;
+	left: 30px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 35px;
+	color: $color_2;
+	font-size: map-get($font-sizes, "large");
+
+	&:hover {
+		color: $color_1;
+		background-color: $background-color_3;
+		font-size: 22px;
+	}
+}
