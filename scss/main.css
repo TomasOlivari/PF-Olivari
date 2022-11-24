@@ -162,7 +162,7 @@ footer .redes img:hover {
   color: rgb(154, 144, 108);
 }
 
-.h2-contactanos {
+.h2-contactenos {
   font: 35px "Alegreya", serif;
   color: white;
 }
@@ -403,6 +403,28 @@ footer .redes img:hover {
     opacity: 1;
   }
 }
+.carousel-item img {
+  -webkit-animation: zoominoutsinglefeatured 7s ease-in-out;
+          animation: zoominoutsinglefeatured 7s ease-in-out;
+}
+
+@-webkit-keyframes zoominoutsinglefeatured {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes zoominoutsinglefeatured {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
 .flip-card {
   background-color: transparent;
   width: auto;
@@ -491,13 +513,14 @@ ul li {
   padding: 11px 16px;
   font-weight: bold;
   font-size: 18px;
-  border: 1px solid rgb(154, 144, 108);
+  border: 2px solid rgb(154, 144, 108);
   border-radius: 4px;
   transition: all ease-in-out 0.2s;
 }
 .boton-contactenos:hover {
   background-color: white;
   color: black;
+  border: 2px solid black;
 }
 
 .gotopbtn {
@@ -562,6 +585,11 @@ ul li {
   footer .logo-footer {
     width: 100%;
     padding-bottom: 10px;
+  }
+  .nav-item {
+    border: 1px solid rgb(154, 144, 108);
+    font-size: 16px;
+    text-align: center;
   }
   #pizzas .container .destacados {
     width: 45%;

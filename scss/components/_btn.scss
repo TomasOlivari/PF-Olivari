@@ -20,13 +20,14 @@
 	padding: 11px 16px;
 	font-weight: bold;
 	font-size: map-get($font-sizes, "large");
-	border: 1px solid rgba(154, 144, 108, 1);
+	border: 2px solid rgba(154, 144, 108, 1);
 	border-radius: 4px;
 	transition: all ease-in-out 0.2s;
 
 	&:hover {
 		background-color: $background-color_3;
 		color: $color_1;
+		border: 2px solid black;
 	}
 }
 
