@@ -422,8 +422,8 @@ footer .redes img:hover {
 }
 
 .carousel-item img {
-  -webkit-animation: zoominoutsinglefeatured 6s ease-in-out;
-  animation: zoominoutsinglefeatured 6s ease-in-out;
+  -webkit-animation: zoominoutsinglefeatured 7s ease-in-out;
+  animation: zoominoutsinglefeatured 7s ease-in-out;
 }
 
 @-webkit-keyframes zoominoutsinglefeatured {
