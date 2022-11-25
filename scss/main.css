@@ -376,6 +376,7 @@ footer .redes img:hover {
 .carousel h5 {
   font: 47px "Alegreya", serif;
   padding-bottom: 10px;
+  color: white;
 }
 .carousel p {
   font-size: 30px;
@@ -385,25 +386,29 @@ footer .redes img:hover {
 }
 
 .carousel-item img {
-  -webkit-animation: zoominoutsinglefeatured 6s ease-in-out;
-          animation: zoominoutsinglefeatured 6s ease-in-out;
+  -webkit-animation: zoominoutsinglefeatured 7s ease-in-out;
+          animation: zoominoutsinglefeatured 7s ease-in-out;
 }
 
 @-webkit-keyframes zoominoutsinglefeatured {
   0% {
-    transform: scale(1);
+    opacity: 0;
+    scale: 1;
   }
   100% {
-    transform: scale(1.2);
+    opacity: 1;
+    scale: 1.2;
   }
 }
 
 @keyframes zoominoutsinglefeatured {
   0% {
-    transform: scale(1);
+    opacity: 0;
+    scale: 1;
   }
   100% {
-    transform: scale(1.2);
+    opacity: 1;
+    scale: 1.2;
   }
 }
 .flip-card {
