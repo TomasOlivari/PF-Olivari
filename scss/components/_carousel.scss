@@ -22,18 +22,16 @@
 
 .carousel-item {
 	img {
-		animation: zoominoutsinglefeatured 7s ease-in-out;
+		animation: anopacity 4s ease-in-out;
 	}
 }
 
-@keyframes zoominoutsinglefeatured {
+@keyframes anopacity {
 	0% {
-		opacity: 0;
-		scale: 1;
+		opacity: 0.02;
 	}
 
 	100% {
 		opacity: 1;
-		scale: 1.2;
 	}
 }
