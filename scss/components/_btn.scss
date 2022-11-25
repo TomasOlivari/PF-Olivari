@@ -44,9 +44,27 @@
 	line-height: 35px;
 	color: $color_2;
 	font-size: map-get($font-sizes, "large");
-	transition: all ease-in-out 0.1s;
 
 	&:hover {
 		color: $color_2;
 	}
+}
+
+@keyframes chevrondown {
+	0% {
+		transform: translate(0);
+	}
+
+	50% {
+		transform: translateY(10px);
+	}
+
+	100% {
+		transform: translate(0);
+	}
+}
+
+.fas.fa-chevron-down.fa-3x {
+	animation: chevrondown 1.2s infinite;
+	color: white;
 }
