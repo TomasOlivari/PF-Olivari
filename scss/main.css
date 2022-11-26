@@ -665,6 +665,9 @@ ul li {
   .fas.fa-chevron-down.fa-3x {
     display: none;
   }
+  .gotopbtn {
+    display: none;
+  }
 }
 @media screen and (max-width: 576px) {
   header .logo {
@@ -704,8 +707,5 @@ ul li {
   }
   .ubicacion .container {
     width: 95%;
-  }
-  .gotopbtn {
-    display: none;
   }
 }/*# sourceMappingURL=main.css.map */

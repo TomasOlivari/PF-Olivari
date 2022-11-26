@@ -168,6 +168,10 @@
 	.fas.fa-chevron-down.fa-3x {
 		display: none;
 	}
+
+	.gotopbtn {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 576px) {
@@ -241,9 +245,5 @@
 		.container {
 			width: 95%;
 		}
-	}
-
-	.gotopbtn {
-		display: none;
 	}
 }
